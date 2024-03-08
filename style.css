@@ -242,7 +242,12 @@ footer {
     padding: 11rem 8.5rem 4rem 8.5rem;
 }
 
-footer>img {
+.footer-content {
+    max-width: 126.5rem;
+    margin: auto;
+}
+
+.footer-content>img {
     margin-bottom: 2.4rem;
 }
 
@@ -292,7 +297,7 @@ form button {
     width: 12rem;
     border-radius: 0.8rem;
     padding: 1.2rem 2rem;
-    font-size: var(--text-lg);
+    font-size: var(--text-md);
 }
 
 
@@ -360,6 +365,10 @@ footer .col {
 
     h3 {
         font-size: 2.4rem;
+    }
+
+    .box:is(:hover, .active) {
+        height: 12rem;
     }
 
     p.text-2 {
