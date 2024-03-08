@@ -216,18 +216,124 @@ section {
 
 footer {
     background-color: var(--black);
-    height: 57.9rem;
+    /* height: 57.9rem; */
+}
+
+button:hover {
+    cursor: pointer;
+    opacity: 0.7;
+    transition: 100ms opacity;
+}
+
+button.menu {
+    display: none;
+}
+
+footer {
+    padding: 11rem 8.5rem 4rem 8.5rem;
+}
+
+footer>img {
+    margin-bottom: 2.4rem;
+}
+
+footer a {
+    font-size: 1.6rem;
+    color: #BCC2C3;
+}
+
+h5 {
+    font-size: 1.8rem;
+    color: #DFDEE2;
+    font-weight: 500;
+    margin-bottom: 0.4rem;
+}
+
+.subscribe {
+    /* height: 21.9rem; */
+    /* width: 100%; */
+    max-width: 40.5rem;
+    background-color: #F4F4F6;
+    border-radius: 1.6rem;
+    padding: 2.4rem;
+    margin-bottom: 2rem;
+}
+
+.subscribe h5 {
+    color: #35333C;
+}
+
+.subscribe p {
+    margin-bottom: 2rem;
+}
+
+form {
+    display: flex;
+    align-items: center;
+}
+
+input {
+    border: 0.1rem solid #BEBDC6;
+    border-radius: 0.8rem;
+    font-size: 1.6rem;
+    padding-left: 1.2rem;
+    height: 4.8rem;
+    width: 100%;
+}
+
+form button {
+    width: 12rem;
+    border-radius: 0.8rem;
+    padding: 1.2rem 2rem;
+    font-size: var(--text-lg);
+}
+
+
+
+.links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12rem;
+
+}
+
+
+footer .col {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+
+}
+
+.social img {
+    cursor: pointer;
+    margin-right: 1.6rem;
+    margin-top: 4rem;
+}
+
+
+.rights {
+    font-size: 1.4rem;
+    color: #BCC2C3;
+    margin-top: 6.5rem;
 }
 
 @media screen and (max-width: 800px) {
-    body {
-        background-color: rgb(140, 170, 140);
-        /* margin: 3rem 1.6rem; */
-    }
 
     main {
         margin: 3rem auto;
         width: 91.4%;
+    }
+
+    button.menu {
+        display: block;
+        height: 4rem;
+        width: 4rem;
+        padding: 0;
+    }
+
+    button.menu img {
+        margin: 1.8rem auto 1.6rem auto;
     }
 
     h1 {
@@ -297,6 +403,25 @@ footer {
         flex-direction: column;
     }
 
+    section:nth-child(even) {
+        flex-direction: column-reverse;
+    }
 
+    footer {
+        padding: 6.4rem 1.6rem 2.4rem 1.6rem;
+    }
+
+    .links {
+        justify-content: space-between;
+        gap: 0;
+    }
+
+    footer .col {
+        margin: 2rem 0;
+    }
+
+    .rights {
+        margin-top: 2.4rem;
+    }
 
 }
