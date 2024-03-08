@@ -51,6 +51,10 @@
 
 }
 
+a {
+    color: var(--black);
+}
+
 
 main {
     margin: 3rem auto;
@@ -97,7 +101,6 @@ p {
 }
 
 p.text-base {
-    /* max-width: 48rem; */
     line-height: 160%;
     font-size: var(--text-md);
     margin: auto;
@@ -139,6 +142,13 @@ button.primary {
 button.secondary {
     background-color: var(--color-secondary);
 }
+
+
+button.icon img {
+    vertical-align: middle;
+    margin-right: 1rem;
+}
+
 
 .button-text {
     display: flex;
@@ -216,7 +226,6 @@ section {
 
 footer {
     background-color: var(--black);
-    /* height: 57.9rem; */
 }
 
 button:hover {
@@ -250,8 +259,6 @@ h5 {
 }
 
 .subscribe {
-    /* height: 21.9rem; */
-    /* width: 100%; */
     max-width: 40.5rem;
     background-color: #F4F4F6;
     border-radius: 1.6rem;
@@ -374,8 +381,6 @@ footer .col {
     .images-head {
         position: static;
         margin: 6.3rem 0;
-        /* display: flex;
-        flex-wrap: wrap; */
     }
 
     .images-head img {
